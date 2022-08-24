@@ -39,21 +39,12 @@ public class App {
     }
 
     public static void isSwitchCase (String estacion) {
-        switch (estacion){
-            case "Otoño":
-                System.out.println("Es otoño");
-                break;
-            case "Invierno":
-                System.out.println("Es invierno");
-                break;
-            case "Primavera":
-                System.out.println("Es primavera");
-                break;
-            case "Verano":
-                System.out.println("Es verano");
-                break;
-            default:
-                System.out.println("No ingresaste una estacion valida");
+        switch (estacion) {
+            case "Otoño" -> System.out.println("Es otoño");
+            case "Invierno" -> System.out.println("Es invierno");
+            case "Primavera" -> System.out.println("Es primavera");
+            case "Verano" -> System.out.println("Es verano");
+            default -> System.out.println("No ingresaste una estacion valida");
         }
     }
 }
