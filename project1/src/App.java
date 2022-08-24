@@ -19,6 +19,12 @@ public class App {
 
     }
 
+    public static void bucle(int n) {
+        for (int i = 0; i <= n; i++) {
+            System.out.println(i);
+        }
+    }
+
 }
 
 class Coche {
