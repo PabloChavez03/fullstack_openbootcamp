@@ -1,8 +1,8 @@
-a = 5
-b = 6
-c = 7
+edad = int(input("Ingrese su edad: "))
 
-if (a == b):
-    print("b es 6")
-elif (a == a):
-    print("son iguales")
+if (edad < 18 and edad >= 0):
+    print("Es menor de edad")
+elif (edad >= 18):
+    print("Es mayor de edad")
+else:
+    print("No puede ingresar una edad negativa")
