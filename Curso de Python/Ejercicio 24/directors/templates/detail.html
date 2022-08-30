@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<h1>Peliculas</h1>
+{% if peliculas %}
+    {% for pelicula in peliculas %}
+        <h3>{{ pelicula.titulo }}</h3>
+        <p>{{pelicula.summary}}</p>
+    {% endfor %}
+{% else %}
+    <p> No hay peliculas </p>
+{% endif %}
+
+
+{% endblock %}

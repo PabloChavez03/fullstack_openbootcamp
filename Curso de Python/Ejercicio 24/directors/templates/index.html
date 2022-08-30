@@ -1,0 +1,21 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h2>Directores</h2>
+{% if directores %}
+<ul>
+    {% for director in directores %}
+        <li><a href="/directors/{{director.id}}">{{director.nombre}} {{director.apellido}}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+    <p> No hay directores </p>
+{% endif %}
+{% comment %} <ul>
+   <li><strong>Directores:</strong> {{directores}}</li>
+   <li><strong>Peliculas:</strong> {{ peliculas }}</li>
+   <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
+   <li><strong>Authors:</strong> {{ num_authors }}</li>
+</ul> {% endcomment %}
+
+{% endblock %}
