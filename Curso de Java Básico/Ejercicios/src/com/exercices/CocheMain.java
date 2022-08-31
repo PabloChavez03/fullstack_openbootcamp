@@ -11,7 +11,9 @@ public class CocheMain {
         System.out.println(suCoche);
 
         CocheElectrico electrico = new CocheElectrico("SamsungElectric");
-        System.out.println();
+        CocheElectrico electrico2 = new CocheElectrico("Verde","Honda","Civic",300.20,4000.23,"Electric Car");
+        electrico.acelerar(120);
+        System.out.println(electrico.velocidad);
 
     }
 }

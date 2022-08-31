@@ -5,10 +5,19 @@ public class CocheElectrico extends Coche{
 
     public CocheElectrico(){}
 
-    public CocheElectrico(String motorElectrico){ // podriamos hacer un super aqui.
+    public CocheElectrico(String motorElectrico){
         this.motorElectrico = motorElectrico;
     }
 
+    public CocheElectrico(String color, String fabricante, String modelo, Double peso, Double largo, String motorElectrico){
+        super(color,fabricante,modelo,peso,largo);
+        this.motorElectrico = motorElectrico;
+    }
+    @Override
+    public void acelerar(Integer velocidad){
+        Integer cantidad = velocidad * 2;
+        super.acelerar(cantidad);
+    }
 
     @Override
     public String toString() {
